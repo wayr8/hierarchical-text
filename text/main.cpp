@@ -56,14 +56,9 @@ int main()
 			ch = _getch();
 		if (ch == ESC)
 		{
-			cout << "\nCompletion of the program\n";
-			cout << "\nTText.Print():\n";
+			cout << "\nCompletion of the program\n\n";
 			t.Print();
 			cout << '\n';
-
-			cout << "Printing via iteration:\n";
-			for (t.Reset(); !t.IsEnd(); t.GoNext())
-				cout << t.GetCurrentLine() << '\n';
 
 			t.Save("..\\out.txt");
 			break;
